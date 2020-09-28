@@ -1,15 +1,16 @@
 body {
     font-size: 110%;
+    text-align: justify;
     text-indent: 45px;
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 50px;
-    background-color: rgba(109, 103, 103, 0.986);
 }
 
 a {
     font-size: 60px;
     text-align: center;
+    color: grey;
 }
 
 img {
