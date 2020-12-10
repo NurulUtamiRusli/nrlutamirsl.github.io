@@ -1,8 +1,3 @@
-.navbar {
-    background-color: black;
-    color: white;
-}
-
 .nav-item {
     margin: 0 20px;
 }
@@ -32,19 +27,29 @@
 .nav-link:hover::before {
     transform: scaleX(1)
 }
-.jumbotron {
-    background-image: url(img/2.jpg);
-    height:100vh;
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+h1 {
+    margin-left: 80px;
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 100px;
 }
 
-.lead{
-    margin-top:240px;
-    margin-left:750px;
-    color:white;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size:50px;
-    text-align:center;
+h4 {
+    color: #00587a;
+}
+
+img {
+    height: 300px;
+}
+
+p {
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+.table{
+margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
 }
