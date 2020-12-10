@@ -21,104 +21,77 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger text-black" href="tugas1.html" target="blank">TUGAS 1 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas1.html" target="blank">TBO <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger text-black" href="tugas2.html">TUGAS 2</a>
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas2.html">Big-O</a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger text-black" href="tugas3.html">TUGAS 3</a>
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas3.html">FSA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger text-black" href="tugas4.html">TUGAS 4</a>
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas4.html">Regex</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger text-black" href="tugas5.html">TUGAS 5</a>
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas5.html">CFG</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <h1>FINITE AUTOMATA</h1>
+    <h1>FINITE STATE AUTOMATA</h1>
+    <hr>
     <p>
-    Automata merupakan suatu sistem yang terdiri atas sejumlah berhingga state, di mana state menyatakan informasi mengenai input. Automata juga dianggap sebagai mesin otomatis (bukan mesin fisik) yang merupakan suatu model matematika dari suatu sistem yang menerima input dan menghasilkan output, serta terdiri dari sejumlah berhingga state 
-    </p>
-   <p>
-   Finite State Automata (FSA) atau finite automata  adalah mesin automata dari bahasa regular. finite automata merupakan  model matematika yang dapat menerima input dan mengeluarkan output yang memiliki state yang berhingga banyaknya dan dapat berpindah dari satu state ke state lainnya berdasarkan input dan fungsi transisi. 
-   <p>
-   <p>
-   Secara formal finite state automata dinyatakan oleh 5 tupel atau M=(Q, Σ, δ, S, F), di mana : <br> Q = himpunan hingga state <br> Σ = himpunan hingga simbol input / alfabet <br> δ = fungsi transisi, menggambarkan simbolinput. fungsi transisi biasanya diberikan dalam bentuk tabel. <br> S = state awal / kedudukan awal (initial state) <br> F = himpunan state akhir. <br>
+    Automata merupakan suatu sistem yang terdiri atas sejumlah berhingga state, di mana state menyatakan informasi mengenai input. Automata juga dianggap sebagai mesin otomatis (bukan mesin fisik) yang merupakan suatu model matematika dari suatu sistem yang menerima input dan menghasilkan output, serta terdiri dari sejumlah berhingga state. Finite State Automata (FSA) atau finite automata  adalah mesin automata dari bahasa regular. finite automata merupakan  model matematika yang dapat menerima input dan mengeluarkan output yang memiliki state yang berhingga banyaknya dan dapat berpindah dari satu state ke state lainnya berdasarkan input dan fungsi transisi. 
    </p>
    <p>
-   ada 2 jenis FSA yaitu <br> Deterministic finite automata (DFA). pada DFA transisi state FSA akibat pembacaan sebuah simbol bersifat tertentu. <br> δ : Q X Σ --> Q
+   Secara formal finite state automata dinyatakan oleh 5 tupel atau M=(Q, Σ, δ, S, F), di mana : <br> Q = himpunan hingga state <br> Σ = himpunan hingga simbol input / alfabet <br> δ = fungsi transisi, menggambarkan simbolinput. fungsi transisi biasanya diberikan dalam bentuk tabel. <br> S = state awal / kedudukan awal (initial state) <br> F = himpunan state akhir. 
    </p>
    <p>
-   Sedangkan NFA adalah singkatan dari non-deterministic finite automata. pada NFA transisi state FSA akibat pembacaan sebuah simbol bersifat tak tentu. <br> δ : Q X Σ --> 2<sup>Q</sup> <br> Mudah untuk membuat NFA daripada DFA untuk bahasa reguler tertentu. Automata terbatas disebut NFA ketika terdapat banyak jalur untuk input spesifik dari status saat ini ke status berikutnya. Setiap NFA bukanlah DFA, tetapi setiap NFA dapat diterjemahkan ke dalam DFA. NFA didefinisikan dengan cara yang sama seperti DFA tetapi dengan dua pengecualian berikut, NFA berisi beberapa status berikutnya, dan berisi transisi ε. Contoh penerapan NFA seperti pada Aplikasi Simulasi Mesin Kopi Vending, ATM, aplikasi pengisian Kartu Rencana Studi (KRS). 
+   Ada 2 jenis FSA yaitu <br> Deterministic finite automata (DFA). pada DFA transisi state FSA akibat pembacaan sebuah simbol bersifat tertentu. <br> δ : Q X Σ →  Q
    </p>
-    <h1>Pemanfaatan NFA dalam pengisian krs</h1>
+   <p>
+   Sedangkan NFA adalah singkatan dari non-deterministic finite automata. pada NFA transisi state FSA akibat pembacaan sebuah simbol bersifat tak tentu. <br> δ : Q X Σ →  2<sup>Q</sup> <p> Mudah untuk membuat NFA daripada DFA untuk bahasa reguler tertentu. Automata terbatas disebut NFA ketika terdapat banyak jalur untuk input spesifik dari status saat ini ke status berikutnya. Setiap NFA bukanlah DFA, tetapi setiap NFA dapat diterjemahkan ke dalam DFA. NFA didefinisikan dengan cara yang sama seperti DFA tetapi dengan dua pengecualian berikut, NFA berisi beberapa status berikutnya, dan berisi transisi ε. Contoh penerapan NFA seperti pada Aplikasi Simulasi Mesin Kopi Vending, ATM, aplikasi pengisian Kartu Rencana Studi (KRS).
+   </p> 
+   </p>
+  <h1>Pemanfaatan NFA dalam pengisian krs</h1> <br>
+<div class="row">
+        <div class="col-sm-6 bg-success pt-5 pb-5 bg-dark">
+            <p>Pada paper ini membahas tentang bagaimana metode Finite State Automata jenis NFA dapat diimplementasikan dalam mengisi kartu rencana studi (KRS).</p>
+            <p>
+            Tuple M pada FSA jenis NFA diantaranya (Q, Ʃ, δ, S, F) yang mengartikan untuk Q=himpunan state, Ʃ=himpunan input, δ=fungsi transis, S=state awal, F=state akhir sebagai contoh sederhana dengan NFA[4]. Dari diagram disamping, kita bisa melihat bahwa tuple-nya sebagai berikut: <br> Q = {q1,q2,q3,q4} <br> Ʃ = {0,1} <br> δ = Fungsi transisi  <br> δ(q1,0)=q2, δ(q1,1)=q2, δ(q2,0)=q2,  <br> δ (q2,1)=(q3,q4), δ(q3,0)=q3, δ(q3,1)=q4, <br> δ (q4,0)=q4, δ(q4,1)=q4 <br> S = {q1} <br> F = {q4} <br>
+            </p>
+        </div>
+        <div class="col-sm-6 bg success pt-5 pb-5 " >
+        <img class="img-fluid" src="img/graph.png">
+        </div>
+</div> <br>
     <p>
-    Pada paper ini membahas tentang bagaimana metode Finite State Automata jenis NFA dapat diimplementasikan dalam mengisi kartu rencana studi (KRS).
-    </p>
-    <p>
-    Tuple M pada FSA jenis NFA diantaranya (Q, Ʃ, δ, S, F) yang mengartikan untuk Q=himpunan state, Ʃ=himpunan input, δ=fungsi transis, S=state awal, F=state akhir sebagai contoh sederhana dengan NFA[4]. Dari diagram dibawah, kita bisa melihat bahwa tuple-nya sebagai berikut: <br>
-Q = {q1,q2,q3,q4} <br>
-Ʃ = {0,1} <br>
-δ = Fungsi transisi  <br>
-δ(q1,0)=q2, δ(q1,1)=q2, δ(q2,0)=q2,  <br>
-δ (q2,1)=(q3,q4), δ(q3,0)=q3, δ(q3,1)=q4, <br>
-δ (q4,0)=q4, δ(q4,1)=q4 <br>
-S = {q1} <br>
-F = {q4} <br>
- <img src="img/graph.png">
-    </p> 
-    <p>
-    dalam pengisian tersebut maka tabel transisinya yaitu: <br>
-    <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">δ</th>
-      <th scope="col">0</th>
-      <th scope="col">1</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">q1</th>
-      <td>q1</td>
-      <td>q1</td>
-    </tr>
-    <tr>
-      <th scope="row">q2</th>
-      <td>q3</td>
-      <td>(q3,q4)</td>
-    </tr>
-    <tr>
-      <th scope="row">q3</th>
-      <td>q3</td>
-      <td>q4</td>
-    </tr>
-     <tr>
-      <th scope="row">q4</th>
-      <td>q4</td>
-      <td>q4</td>
-    </tr>
-  </tbody>
-</table>
-    </p>
-    <p>
-    Kasus pada Tabel 1 dapat diterapkan kedalam pengisian
-KRS, sebagai contoh bila q1 itu adalah mata kuliah Algoritma
-Pemograman dan q2 adalah Bahasa dan Automata, dan
-himpunan input 0 sebagai di tidak ambil dan himpunan input 1
-sebagai ambil, maka untuk bisa mengambil mata kuliah Bahasa
-dan Autama harus mengambil mata kuliah Algoritma
-Pemograman (q1) terlebih dahulu.
+    Dalam pengisian tersebut maka tabel transisinya yaitu: 
+    <br>
+    <div class="row">
+        <div class="col-sm-6 bg-success pt-5 pb-5 bg-white" >
+             <img class="img-fluid" src="img/tabel.png">
+        </div>
+        <div class="col-sm-6 bg success pt-5 pb-5 bg-dark">
+         <p>
+    Kasus pada Tabel 1 dapat diterapkan kedalam pengisian KRS, sebagai contoh bila q1 itu adalah mata kuliah Algoritma Pemograman dan q2 adalah Bahasa dan Automata, dan himpunan input 0 sebagai di tidak ambil dan himpunan input 1 sebagai ambil, maka untuk bisa mengambil mata kuliah Bahasa dan Autama harus mengambil mata kuliah Algoritma Pemograman (q1) terlebih dahulu.
     </p>
     <p>
     sistem dirangcang dengan menggunakan flowchart, yang menjelaskan tentang gambaran umum aplikasi pengisian Kartu Rencana Studi. pada flowchart aplikasi dijelaskan sebagai berikut:<br>
     mahasiswa menentukan mata kuliah yang akan diambil semester berikutnya. <br> sistem akan memfalidasi mata kuliah yang diambil. <br> sistem akan menampilkan laporan diterimanya atau ditolaknya pengisian KRS tersebut.
     </p>
+        </div>
+</div> <br>
+     <br>
+   
+    <br><br>
+<footer>
+ Copyright @ 2020
+</footer>
+
+    
 
     </body>
     </html>

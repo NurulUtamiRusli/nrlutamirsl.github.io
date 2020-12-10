@@ -47,4 +47,15 @@ p {
     margin-left: 80px;
     margin-right: 80px;
     text-align: justify;
+    text-indent:22px;
+}
+.navbar-nav{
+    font-size:15 px;
+}
+hr{
+    width:75px;
+    border-color:black;
+    border-width: 3px;
+    border-radius:5px;
+    
 }
