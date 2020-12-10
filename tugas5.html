@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Tugas 5 TBO</title>
+    <link rel="stylesheet" type="text/css" href="tugas4.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-black" href="index.html">NURUL UTAMI RUSLI - D121181004</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas1.html" target="blank">TUGAS 1 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas2.html">TUGAS 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas3.html">TUGAS 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas4.html">TUGAS 4</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas5.html">TUGAS 5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>context-free grammar </h1>
+    <p>
+    A context-free grammar (CFG) adalah representasi lain untuk context-free language  (CFL). CFG kurang membatasi di sisi kanan produksi daripada regular grammars, jadi CFG bisa  menghasilkan superset yang tepat dari bahasa yang dihasilkan oleh grammard reguler. Dalam teori bahasa formal, Context-Free Grammar(CFG) adalah sebuah grammar formal dengan bentuk  <br>
+    A →  α
+    </p>
+    <p>
+    Dengan A adalah sebuah symbol non-terminal, dan α adalah terminal dan atau nonterminal. Context Free Grammar (CFG) adalah grammard yang mempunyai tujuan sama seperti grammard regular yaitu menunjukkan bagaimana menghasilkan suatu bagian-bagian (untai) dalam sebuah bahasa. Context Free Grammar (CFG) menjadi dasar dalam pembentukan suatu parser/proses analisis sintaksis. 
+    </p>
+    <p>
+    Bagian sintaks dalam suatu kompilator kebanyakan di definisikan dalam grammard bebas konteks. Pohon penurunan (derivation tree/parse tree) berguna untuk menggambarkan simbol-simbol variabel menjadi simbol-simbol terminal setiap simbol variabel akan di turunkan menjadi terminal sampai tidak ada yang belum tergantikan. Contoh, terdapat CFG dengan aturan produksi sebagai berikut dengan simbol awal S : <br>
+    <ul>
+    <li>S → aSa, </li>
+    <li>S → bSb, </li>
+    <li>S → ε,</li>
+    </ul>
+    </p>
+    <p>
+    Dengan penurunan sebagai berikut, akan menghasilkan aabbaa : <br>
+    S → aSa → aaSaa → aabSbaa → aabbaa.
+    </p>
+   <p>
+   CFG mungkin merupakan aspek terpenting dari teori bahasa formal, karena (CFG) digunakan untuk mendeskripsikan sintaks dari dasarnya setiap bahasa pemrograman modern. konteks Setiap pelengkap modern menggunakan CFG konsep untuk mengurai program (Tak ketinggalan peran penting mereka dalam menggambarkan bahasa alami. ) Bahasa pemrograman sebenarnya memiliki banyak fitur yang dapat dijelaskandengan elegan melalui bahasa tanpa konteks. Apa yang dikatakan oleh teori bahasa formal tentang bahasa bebas konteks memiliki aplikasi penting dalam desain bahasa pemrograman serta dalam pembangunan yang efisien kompiler. 
+   </p>
+   <p>
+   grammars digunakan untuk mendeskripsikan bahasa pemrograman. Yang terpenting, ada cara mekanis untuk mengubah deskripsi sebagai Context-Free Grammers (CFG) menjadi parser, komponen penyusun yang menemukan struktur program sumber dan merepresentasikan struktur itu sebagai pohon.
+   </p>
+   <p>
+   Misalnya, The Document Type Definition (DTD) fitur XML (Extensible Markup Language) pada dasarnya adalah tata bahasa bebas konteks yang menjelaskan tag HTML yang diizinkan dan cara tag ini dapat disarangkan. Misalnya, seseorang dapat mendeskripsikan urutan karakter yang dimaksudkan untuk ditafsirkan sebagai telepon. nomor dengan < PHONE> dan < /PHONE>
+   </p>
+   <p>
+   Contoh:
+   </p>
+   <p>
+   <ol>
+   <li>
+   Contoh-1 : Bahasa pemrograman tipikal menggunakan tanda kurung dan atau tanda kurung secara bersarang dan seimbang. Artinya, kita harus dapat mencocokkan beberapa tanda kurung kiri dengan tanda kurung kanan yang muncul tepat di sebelah kanannya, menghapus keduanya, dan ulangi. Jika kita akhirnya menghilangkan semua tanda kurung, maka string itu seimbang. Contoh string dengan tanda kurung seimbang adalah (()), () (), (() ()), sedangkan) (, dan (() tidak seimbang. Tata bahasa dengan produksi berikut menghasilkan semua dan hanya string dengan tanda kurung seimbang: <br>
+   B → BB | (B) | λ <br> Produksi pertama, B → BB, mengatakan bahwa penggabungan dua string tanda kurung seimbang adalah seimbang. Artinya, kita dapat mencocokkan tanda kurung dalam dua string secara independen. <br> Produksi kedua, B → ( B), mengatakan bahwa jika kita menempatkan sepasang tanda kurung di sekitar string seimbang, maka hasilnya seimbang. <br> Produksi ketiga, B → λ adalah dasarnya, yang mengatakan bahwa string kosong itu seimbang.
+   </li>
+   <li>Contoh-2: Ada banyak aspek bahasa pemrograman tipikal yang berperilaku seperti tanda kurung seimbang. Awal dan akhir blok kode, seperti mulai dan akhir di Pascal, atau kurung kurawal {. . . } dari C, adalah contoh. Ada pola terkait yang terkadang muncul, di mana "tanda kurung" bisa diseimbangkan dengan pengecualian bahwa mungkin ada tanda kurung kiri yang tidak seimbang. Contohnya adalah pengobatan jika dan lain di C. Klausa if bisa tampak tidak seimbang dengan klausa else, atau mungkin diimbangi dengan klausa else yang cocok. Grammer yang menghasilkan kemungkinan urutan jika dan lain ( dipersembahkan oleh saya dan e, masing-masing) adalah: <br> S → SS | iS | iSe | λ <br>  Contohnya, ieie, iie, dan iei adalah kemungkinan urutan jika dan lain dan masing-masing string ini dihasilkan oleh grammer di atas. Beberapa contoh urutan ilegal yang tidak dibuat oleh grammer adalah, ei, ieeii, iee.
+    </li>
+    <li>
+    contoh-3: Kami memberikan CFG di bawah ini yang menjelaskan beberapa bagian dari struktur HTML (Hypertext Markup Language). <br> Char→ a | A | . . . <br> Teks → λ | chart Text <br> Doc → λ | Elemen Doc <br> Elemen → Teks | < EM> Doc  </ EM> | < P > Doc | < OL > List < /OL > <br> 
+List → λ | ListItem List <br>
+ListItem→ < LI> Doc
+</li>
+   </ol>
+   </p>
+    </body>
+    </html>
