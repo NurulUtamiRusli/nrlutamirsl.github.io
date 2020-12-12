@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Tugas 6 TBO</title>
+    <link rel="stylesheet" type="text/css" href="tugas6.css">
+</head>
+    <body id="page-top">
+    
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-black" href="index.html">NURUL UTAMI RUSLI - D121181004</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas1.html">TBO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas2.html">Big-O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas3.html">FSA</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas4.html">Regex</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas5.html">CFG</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger text-black" href="tugas6.html">Chomsky</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+         <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Chomsky</h1> <hr>
+    <p class="lead">Chomsky hierarchy</p>
+  </div>
+</div>
+        <div class="container">
+           
+            <p>Berdasarkan komposisi bentuk ruas kiri dan ruas kanan produksinya (&alpha; → &beta;), Noam Chomsky mengklasifikasikan 4 tipe grammar :</p> <BR>
+        <p><img src="img/chomsky.svg" style="float:left"; />
+        <a class="nav-link js-scroll-trigger" href="#typenol">Recursively Enumerable grammar</a> <br>
+        <a class="nav-link js-scroll-trigger" href="#typesatu">Context Sensitive Grammar</a> <br>
+        <a class="nav-link js-scroll-trigger" href="#typedua">Context Free Grammar</a> <br>
+        <a class="nav-link js-scroll-trigger" href="#typetiga">Regular Grammar</a> <br>
+        </p> <br><br><br><br>
+
+        <div id="typenol">
+            <h3>Type 0: Recursively Enumerable grammar.</h3>
+            <p>
+                Tata bahasa tipe-0 mencakup semua tata bahasa formal. tata bahasa tipe 0 dikenali oleh mesin turing. Bahasa ini juga dikenal sebagai bahasa Unrestricted Grammar. Produksi Tata Bahasa dalam bentuk <br>
+                (&alpha; → &beta;) <br>
+                dimana: <br>
+                 &alpha; adalah (V + T) * V (V + T) * <br>
+                  &nbsp; V: Variabel <br>
+                 &nbsp; T: Terminal. <br>
+                &beta; adalah (V + T) * <br>
+                Dalam tipe 0 setidaknya harus ada satu variabel di sisi kiri produksi. <br>
+                Sebagai contoh <br>
+                &nbsp; Sab -> ba <br>
+                &nbsp; A -> S. <br>
+                jadi, Variabel adalah S, A dan Terminal a, b.    <br>
+                <a href="https://en.wikipedia.org/wiki/Unrestricted_grammar">liat lebih banyak</a>
+            </p>
+        </div>
+        <div id="typesatu">
+            <h3>Tipe 1: Context Sensitive Grammar</h3>
+            <p>
+               grammar tipe-1 menghasilkan  context-sensitive languages. Bahasa yang dihasilkan oleh tata bahasa dikenali oleh Linear Bound Automata. Dalam Tipe 1 <br>
+                <ol>
+                     <li>Pertama-tama tata bahasa Tipe 1 harus Tipe 0.</li>
+                    <li>Produksi Tata Bahasa dalam bentuk</li>
+                </ol>
+                (&alpha; → &beta;) <br>
+                |&alpha;| <= | &beta; |
+                    Yaitu jumlah simbol dalam &alpha; kurang dari atau sama dengan &beta; .  Sebagai contoh: <br>
+                    &nbsp; S → AB <<br>
+                   &nbsp;  AB → abc <br>
+                   &nbsp;  B → b <br>   
+
+                <a href="https://en.wikipedia.org/wiki/Context-sensitive_grammar">liat lebih banyak</a> 
+            </p>
+        </div>
+        <div id="typedua">
+        <h3>Tipe 2: Context Free Grammar</h3>
+             <p>
+                    Pada tipe-2 Bahasa yang dihasilkan oleh tata bahasa dikenali oleh automata Pushdown. Tata bahasa tipe-2 menghasilkan context-free languages. Di Tipe 2,
+                    <ol>
+                        <li>Pertama-tama harus Tipe 1.</li>
+                         <li>Sisi kiri produksi hanya dapat memiliki satu variabel.</li>
+                    </ol>
+                    | &alpha; | = 1.
+                    Tidak ada batasan pada &beta; .  Sebagai contoh,
+                   &nbsp;  S → AB /<br>
+                    &nbsp; A → a <br>
+                   &nbsp; B → b <br>
+                   <a href="https://en.wikipedia.org/wiki/Context-free_grammar">liat lebih banyak</a>
+                 </p>
+        </div>
+        <div id="typetiga">
+        <h3> Tipe 3: Regular Grammar</h3>
+            <p>
+                   Grammar tipe-3 menghasilkan Regular Grammar. Bahasa-bahasa ini persis dengan semua bahasa yang dapat diterima  finite state automaton. Tipe 3 adalah bentuk tata bahasa yang paling terbatas. Tipe 3 harus dalam bentuk yang diberikan saja: <br>
+                    <b> V → VT * / T *. </b> <br>
+                    (atau) <br>
+                    <b> V →T * V / T * </b> <br>
+                    sebagai contoh : <br>
+                   &nbsp; S → ab. <br>
+                    <a href="https://en.wikipedia.org/wiki/Regular_grammar">liat lebih banyak</a>
+                </p>
+        </div>
+        <h6>Tabel berikut merangkum masing-masing dari empat jenis tata bahasa Chomsky</h6>
+        <img id="tabel" src="img/tabell.png" alt="">
+        </div> <br><br>
+
+         <div class="footer-copyright text-center py-3">
+    <a href="https://www.instagram.com/hasanuddin_univ/"><i class=" fab fa-instagram m-4 text-white"></i></a>
+    <a href="https://web.facebook.com/hasanuddin.university/?_rdc=1&_rdr"><i class="fab fa-facebook-f m-4 text-white"></i></a>
+    <a href="https://unhas.ac.id/en text-white"><i class=" far fa-envelope m-4 text-white"></i></a>
+    <a href="#"><i class="fab fa-twitter m-4 text-white"></i></a>
+    </div>
+</div>
+        
+    </body>
+
+</html>

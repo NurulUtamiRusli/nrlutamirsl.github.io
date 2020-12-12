@@ -27,22 +27,11 @@
 .nav-link:hover::before {
     transform: scaleX(1)
 }
-h2 {
-    text-align: center;
-    color: black;
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Dancing Script', cursive;
-    margin-top: 100px;
-}
-
-h4 {
-    color: #00587a;
-}
 
 img {
     height: 35%;
-    width:35%;
-    display:block;
+    width: 35%;
+    display: block;
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -51,12 +40,30 @@ p {
     margin-left: 80px;
     margin-right: 80px;
     text-align: justify;
-    text-indent:22px;
+    text-indent: 22px;
 }
-hr{
-    width:75px;
-    border-color:black;
+
+.lead {
+    text-align: center;
+    color: white;
+}
+
+.display-4 {
+    text-align: center;
+    color: white;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+hr {
+    width: 75px;
+    border-color: grey;
     border-width: 3px;
-    border-radius:5px;
-    
+    border-radius: 5px;
+}
+
+.footer-copyright {
+    background-color: black
 }

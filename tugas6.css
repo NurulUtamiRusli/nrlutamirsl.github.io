@@ -34,25 +34,37 @@ h2 {
     font-family: 'Dancing Script', cursive;
     margin-top: 100px;
 }
-
-h4 {
-    color: #00587a;
+.lead{
+    text-align:center;
+}
+.display-4{
+    text-align:center;
 }
 
 img {
-    height: 300px;
+    height: 35%;
+    width:35%;
+    display:block;
+    margin-left: 100px;
+    margin-right: 80px;
+    
 }
 
 p {
-    margin-left: 80px;
-    margin-right: 80px;
     text-align: justify;
     text-indent:22px;
 }
-.navbar-nav{
-    font-size:15 px;
-}
 
+h1{
+    text-align:center
+}
+.spasi{
+    text-indent:2em;
+}
+.row {
+    margin-left: 150px;
+    margin-right: 150px;
+}
 .lead{
     text-align:center;
     color:white;
@@ -72,4 +84,8 @@ hr{
 }
 .footer-copyright{
     background-color:black
+}
+#tabel{
+    height:400px;
+    width:700px;
 }
